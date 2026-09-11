@@ -1,0 +1,67 @@
+.content {
+  padding: 24px 36px 48px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 620px;
+}
+
+.offerCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px;
+}
+
+.offerTitle {
+  font-weight: 700;
+  font-size: 14.5px;
+  margin: 0 0 6px;
+}
+
+.offerMeta {
+  font-size: 12.5px;
+  color: var(--color-muted);
+  margin: 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 22px;
+  flex-shrink: 0;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  inset: 0;
+  background: var(--color-line);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.slider::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 3px;
+  top: 3px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.15s ease;
+}
+.switch input:checked + .slider {
+  background: var(--color-veg);
+}
+.switch input:checked + .slider::before {
+  transform: translateX(18px);
+}

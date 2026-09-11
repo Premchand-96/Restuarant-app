@@ -1,0 +1,158 @@
+.tabs {
+  display: flex;
+  gap: 4px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 3px;
+}
+
+.tabBtn {
+  background: none;
+  border: none;
+  padding: 7px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-muted);
+  border-radius: 5px;
+}
+
+.tabBtnActive {
+  background: var(--color-ink);
+  color: #fff;
+}
+
+.content {
+  padding: 24px 36px 48px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.column {
+  min-width: 0;
+}
+
+.columnHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--color-muted);
+  padding: 0 4px 12px;
+}
+
+.count {
+  background: var(--color-border);
+  color: var(--color-ink);
+  font-size: 11px;
+  padding: 1px 7px;
+  border-radius: 999px;
+}
+
+.columnBody {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.emptyCol {
+  font-size: 12.5px;
+  color: var(--color-muted);
+  padding: 16px 4px;
+  text-align: center;
+}
+
+.orderCard {
+  padding: 14px;
+}
+
+.orderTop {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.time {
+  font-size: 11px;
+  color: var(--color-muted);
+}
+
+.customer {
+  font-weight: 700;
+  font-size: 13.5px;
+  margin: 0 0 3px;
+}
+
+.address {
+  font-size: 11.5px;
+  color: var(--color-muted);
+  margin: 0 0 10px;
+  line-height: 1.4;
+}
+
+.itemList {
+  margin: 0 0 10px;
+  padding-left: 16px;
+  font-size: 12.5px;
+  color: var(--color-ink);
+}
+.itemList li { margin-bottom: 2px; }
+
+.total {
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0 0 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--color-line);
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.actions button { flex: 1; font-size: 12px; padding: 8px 10px; }
+
+.historyTable {
+  padding: 8px;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.table th {
+  text-align: left;
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--color-muted);
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.statusPill {
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 999px;
+  text-transform: capitalize;
+}
+.status_completed { background: #E7E4DA; color: var(--color-muted); }
+.status_rejected { background: #F4E1DF; color: var(--color-danger); }
